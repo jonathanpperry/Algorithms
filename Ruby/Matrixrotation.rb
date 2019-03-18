@@ -2,10 +2,6 @@ require 'pp'
 
 class Matrixrotation
 
-  def rotateCounterclockwise(arrayToRotate)
-    return arrayToRotate.transpose.reverse
-  end
-
   def testRotation?(origArray, rotatedArray)
     Integer n = origArray.length # n=3
     i=0
@@ -21,6 +17,11 @@ class Matrixrotation
       i+=1
     end
     return true
+  end
+
+  def rotateCounterclockwise(arrayToRotate)
+    # Implementation of the counter-clockwise rotation
+    return arrayToRotate.transpose.reverse
   end
 
 end
