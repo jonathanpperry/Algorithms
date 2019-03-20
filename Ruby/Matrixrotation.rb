@@ -8,7 +8,7 @@ class Matrixrotation
 
   def testRotation?(origArray, rotatedArray)
     if !all_elements_arrays_of_same_size?(origArray)
-      abort("Inputted object is not an matrix")
+      raise("Inputted object is not an matrix")
     end
     Integer n = origArray.length # n=3
     i=0
